@@ -329,7 +329,7 @@ margin-bottom: 5px;
     font-size: 23px;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 .main-container .living-bedroom-favourites  .inner-container .heading h1 span{
     font-weight: normal;
@@ -435,7 +435,7 @@ margin-bottom: 5px;
     justify-self: end;
     font-size: 12px;
     font-weight: bold;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 .main-container .kitchen-laundry-favourites  .inner-container
 {
