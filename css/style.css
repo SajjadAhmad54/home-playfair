@@ -160,7 +160,10 @@ body
 .main-container .banner .images .single-product
 {
     position: relative;
-    height: 413px;
+    /* height: 413px; */
+}
+.main-container .banner .images .single-product img{
+    vertical-align: bottom;
 }
 .main-container .banner .images .single-product .hover{ 
     display: none;
@@ -253,62 +256,61 @@ body
 .main-container .party-banner
 {
     display: grid;
-    grid-template-columns: 1fr 1fr auto;
+    grid-template-columns: 1fr 1fr;
         /* background: #ff4f29; */
-        position: relative;
+        /* position: relative; */
 }
-.main-container  .party-banner .party-banner-background
+.main-container .party-banner .party-banner-background
 {
-    background: url('../images/box-part-banner_03.jpg');
-    /* position: relative; */
-    /* top: 28px;
-    left: 28px; */
-    
+    background: url('../images/orange-pic.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 140px;
+    display: grid;
+    grid-template-columns: 520px auto;
 }
-.main-container  .party-banner .party-banner-background  .party-banner-heading
+.main-container  .party-banner .party-banner-heading
 {
     position: absolute;
-    top: 30px;
-    /* bottom: 0px; */
-    right: 131px;
+    left: 28px;
+    top: 19px;
 }
 .main-container  .party-banner .party-banner-heading h1
 {
     color: white;
-    font-size: 40px;
+    font-size: 43px;
     font-weight: normal;
+    font-family: 'Playfair Display', serif;
 }
 .main-container  .party-banner .party-banner-heading h2
 {
-    font-size: 20px;
+    font-size: 23px;
     color: white;
     font-weight: normal;
 }
-.main-container  .party-stuff
-{
-    background: url('../images/trangle_03.jpg') no-repeat;
-    background-size: cover;
-    width: 139px;
-    color: white;
-}
-.main-container   .party-stuff .party-stuff-heading
+.main-container   .party-banner  .party-stuff-heading
 {
     transform: rotate(-48deg);
     text-align: center;
-  padding-top: 72px;
-
+    color: white;
+    position: absolute;
+ right: -7px;
+ bottom: 6px;
 }
-.main-container  .party-banner  .party-stuff h1
+.main-container  .party-banner .party-stuff-heading h1
 {
-font-size: 15px;
-margin-bottom: 5px;
+        font-size: 15px;
+        margin-bottom: 5px;
 }
-.main-container  .party-banner  .party-stuff h2
+.main-container  .party-banner .party-stuff-heading h2
 {
  font-size: 12px;
  text-transform: uppercase;
  margin-bottom: 7px;
  font-weight: bold;
+}
+.main-container  .party-banner .party-stuff-heading h2 span{
+    font-weight: normal;
 }
 .main-container .living-bedroom-favourites
 {
@@ -329,7 +331,7 @@ margin-bottom: 5px;
     font-size: 23px;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
-    /* text-transform: capitalize; */
+    text-transform: capitalize;
 }
 .main-container .living-bedroom-favourites  .inner-container .heading h1 span{
     font-weight: normal;
@@ -435,7 +437,7 @@ margin-bottom: 5px;
     justify-self: end;
     font-size: 12px;
     font-weight: bold;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
 }
 .main-container .kitchen-laundry-favourites  .inner-container
 {
@@ -596,6 +598,7 @@ margin-bottom: 5px;
 }
 .main-container .middle-container  .middle-container-heading h1{
     font-size: 35px;
+    font-family: 'Playfair Display', serif;
 }
 .main-container .middle-container  .middle-container-heading h2{
     font-size: 23px;
